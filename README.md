@@ -1,22 +1,66 @@
 # infors2
-# 🧠 Sistema de Bem-Estar Mental Integrado à Escola
+========== SISTEMA DE BEM-ESTAR ESCOLAR ==========
 
-Uma plataforma completa que integra gestão escolar com monitoramento de ansiedade e saúde mental dos alunos.
+✅ Sistema inicializado com sucesso
+   Alunos: 2
+   Professores: 1
+   Psicólogos: 1
 
-## 📋 Funcionalidades
+--- TESTE 1: LOGIN ---
+Login bem-sucedido
+Usuário: João Silva (student)
 
-- ✅ Dashboard de bem-estar do aluno
-- ✅ Alertas inteligentes para risco de ansiedade
-- ✅ Portal do orientador/psicólogo
-- ✅ Recursos de autojuda (meditação, respiração)
-- ✅ Relatórios para responsáveis
-- ✅ Análise preditiva com ML
+--- TESTE 2: REGISTRAR ANSIEDADE ---
+Ansiedade registrada
+Nível: 6 | Em risco: false
 
-## 🛠️ Tech Stack
+Ansiedade registrada
+Nível: 8 | Em risco: true
 
-- **Frontend:** React + Tailwind CSS
-- **Backend:** Node.js + Express
-- **Banco de dados:** PostgreSQL
-- **ML:** TensorFlow.js
+--- TESTE 3: ALUNOS EM RISCO ---
+Total em risco: 1
+  • João Silva: Nível 8/10
 
-## 📂 Estrutura do Projeto
+--- TESTE 4: AGENDAR SESSÃO ---
+Agendamento criado
+Data: 2024-06-15T00:00:00.000Z
+Hora: 14:00
+
+--- TESTE 5: POLIMORFISMO - PERMISSÕES ---
+
+👨‍🎓 Aluno:
+  ✓ view_own_grades
+  ✓ view_own_anxiety_data
+  ✓ submit_assignments
+
+👨‍🏫 Professor:
+  ✓ view_student_grades
+  ✓ create_assignments
+  ✓ view_anxiety_levels
+  ✓ message_students
+
+👨‍⚕️ Psicólogo:
+  ✓ view_all_anxiety_data
+  ✓ manage_appointments
+  ✓ record_interventions
+  ✓ generate_reports
+
+👨‍💼 Admin:
+  ✓ manage_users
+  ✓ delete_users
+  ✓ view_all_data
+  ✓ generate_reports
+  ✓ system_config
+
+--- TESTE 6: RELATÓRIO FINAL ---
+Total de usuários: 5
+Alunos: 2
+Professores: 1
+Psicólogos: 1
+Alunos em risco: 1
+
+--- TESTE 7: TRATAMENTO DE ERROS ---
+✗ Usuário não encontrado
+✗ Nível deve estar entre 0 e 10
+
+========== FIM DO TESTE ==========
